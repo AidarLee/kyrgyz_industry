@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-__k3#a94!x3+aci6r#pzuvd_%jlu&5&u8o(wb&_)pze-x$3_9t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,12 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -78,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'KG_INDUSTRY',
-        'USER': 'ajo',
-        'PASSWORD': '1330',
+        'USER': 'Userr',
+        'PASSWORD': '123456',
         'HOST': '127.0.0.1',
         'PORT': '1433',
         'OPTIONS': {
@@ -111,13 +113,26 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'ru-ru'
+from django.utils.translation import gettext_lazy as _
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_TZ = True
+
+LANGUAGE_CODE = 'ru'
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('ru', _('Russian')),
+    ('de', _('Deutsch')),
+    ('zh-hans', _('简体中文')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
 
 
 # Static files (CSS, JavaScript, Images)

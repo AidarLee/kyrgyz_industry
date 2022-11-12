@@ -1,0 +1,475 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-12 11:50+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\app_blog\settings.py:127
+msgid "English"
+msgstr ""
+
+#: .\app_blog\settings.py:128
+msgid "Russian"
+msgstr ""
+
+#: .\app_blog\settings.py:129
+msgid "Deutsch"
+msgstr ""
+
+#: .\app_blog\settings.py:130
+msgid "简体中文"
+msgstr ""
+
+#: .\app_blog\urls.py:23
+msgid "admin/"
+msgstr ""
+
+#: .\main\templates\client\blocks\header.html:7
+msgid "Открытое Акционерное Общество"
+msgstr "公共公司"
+
+#: .\main\templates\client\blocks\header.html:15
+msgid "О нас"
+msgstr "关于我们"
+
+#: .\main\templates\client\blocks\header.html:17
+msgid "Об обществе"
+msgstr "关于社会"
+
+#: .\main\templates\client\blocks\header.html:18
+#: .\main\templates\client\index.html:566
+msgid "Руководство"
+msgstr "管理"
+
+#: .\main\templates\client\blocks\header.html:19
+msgid "Блоки"
+msgstr "块"
+
+#: .\main\templates\client\blocks\header.html:20
+msgid "Наши пратнеры"
+msgstr "我们的同伴"
+
+#: .\main\templates\client\blocks\header.html:21
+msgid "Нормативно-правовая база"
+msgstr "法律框架"
+
+#: .\main\templates\client\blocks\header.html:22
+msgid "Вакансии"
+msgstr "工作"
+
+#: .\main\templates\client\blocks\header.html:25
+msgid "Инвесторам и партнерам"
+msgstr "对于投资者和合作伙伴"
+
+#: .\main\templates\client\blocks\header.html:27
+msgid "Инвестиционный кейс"
+msgstr "投资案例"
+
+#: .\main\templates\client\blocks\header.html:28
+msgid "Стратегия развития"
+msgstr "发展战略"
+
+#: .\main\templates\client\blocks\header.html:29
+msgid "Проекты и презентации"
+msgstr "项目和演示"
+
+#: .\main\templates\client\blocks\header.html:30
+msgid "Отчеты и результаты"
+msgstr "报告和结果"
+
+#: .\main\templates\client\blocks\header.html:33
+msgid "Пресс-центр"
+msgstr "新闻中心"
+
+#: .\main\templates\client\blocks\header.html:35
+msgid "Пресс-релизы (новости)"
+msgstr "新闻稿（新闻）"
+
+#: .\main\templates\client\blocks\header.html:36
+msgid "Интервью"
+msgstr "面试"
+
+#: .\main\templates\client\blocks\header.html:37
+msgid "Фотогалерея"
+msgstr "照片库"
+
+#: .\main\templates\client\blocks\header.html:38
+msgid "Брифинг"
+msgstr "简报"
+
+#: .\main\templates\client\blocks\header.html:41
+msgid "Закупки"
+msgstr "采购"
+
+#: .\main\templates\client\blocks\header.html:43
+#: .\main\templates\client\index.html:266
+msgid "Конкурсы"
+msgstr "比赛"
+
+#: .\main\templates\client\blocks\header.html:44
+msgid "Архив конкурсов"
+msgstr "比赛档案"
+
+#: .\main\templates\client\blocks\header.html:47
+msgid "Контакты"
+msgstr "联系人"
+
+#: .\main\templates\client\blocks\header.html:48
+msgid "Админ-Панель"
+msgstr "管理面板"
+
+#: .\main\templates\client\index.html:15 .\main\templates\client\index.html:742
+msgid "ОАО «Кыргызиндустрия»"
+msgstr "OJSC“吉尔吉斯工业”"
+
+#: .\main\templates\client\index.html:16
+msgid ""
+"создано постановлением Кабинета Министров Кыргызской Республики за №341 от "
+"24 декабря 2021 года со 100%% участием государства в его уставном капитале, "
+"который составляет 1 млрд. сомов."
+msgstr ""
+"由吉尔吉斯共和国内阁第 341 号法令创建2021 年 12 月 24 日，国家 100% 参与其法"
+"定资本，这是10亿索姆。"
+
+#: .\main\templates\client\index.html:18
+msgid "Наши Проекты"
+msgstr "我们的计划"
+
+#: .\main\templates\client\index.html:71
+msgid "О НАС"
+msgstr "关于我们"
+
+#: .\main\templates\client\index.html:77 .\main\templates\client\index.html:153
+msgid ""
+"Основными направлениями промышленной политики, реализуемой ОАО являются:"
+msgstr "JSC实施的产业政策的主要方向是："
+
+#: .\main\templates\client\index.html:80
+msgid ""
+"Формирование благоприятного инвестиционного и предпринимательского климата."
+msgstr "形成良好的投资营商环境。"
+
+#: .\main\templates\client\index.html:81
+msgid "Инновационно-технологическое развитие промышленности."
+msgstr "产业创新和科技发展。"
+
+#: .\main\templates\client\index.html:82
+msgid "Обеспечение промышленных предприятий востребованными кадрами."
+msgstr "为工业企业提供所需人才。"
+
+#: .\main\templates\client\index.html:83
+msgid "Продвижение продукции промышленных предприятий на рынках сбыта."
+msgstr "工业企业产品在市场上的推广。"
+
+#: .\main\templates\client\index.html:84
+msgid "Создание промышленных кластеров."
+msgstr "打造产业集群。"
+
+#: .\main\templates\client\index.html:85
+msgid ""
+"Оснащение промышленных предприятий энергоресурсами, инженерной и "
+"транспортной инфраструктурой."
+msgstr "为工业企业配备能源、工程和交通基础设施。"
+
+#: .\main\templates\client\index.html:90
+msgid ""
+"Открытое Акционерное ОбществоОАО “Кыргызиндустрия” создано решением Кабинета "
+"Министров со 100%% участием государства в его уставном капитале, который "
+"составляет 1 млрд. сомов."
+msgstr ""
+"由吉尔吉斯共和国内阁第 341 号法令创建2021 年 12 月 24 日，国家 100% 参与其法"
+"定资本，这是10亿索姆。"
+
+#: .\main\templates\client\index.html:91
+msgid ""
+"Учредителем и единственным акционером Общества является Кабинет Министров "
+"Кыргызской Республики. ОАО «Кыргызиндустрия» является коммерческой "
+"организацией, имеет юридический статус (обладает обособленным имуществом, "
+"имеет самостоятельный баланс, корреспондентские, расчетные, валютные и "
+"другие счета в банках Кыргызской Республики и за ее пределами)."
+msgstr ""
+"公司的创始人和唯一股东是内阁吉尔吉斯共和国的。OJSC “吉尔吉斯工业” 是一个商业"
+"广组织，具有法律地位（拥有单独的财产，拥有独立的资产负债表、代理、结算、货币"
+"和吉尔吉斯共和国及其他地区银行的其他账户）。"
+
+#: .\main\templates\client\index.html:93
+msgid "Узнать Больше"
+msgstr "了解更多"
+
+#: .\main\templates\client\index.html:108
+msgid "Инвестиционные возможности регионов Кыргызстана"
+msgstr "吉尔吉斯斯坦地区的投资机会"
+
+#: .\main\templates\client\index.html:109
+msgid ""
+"Инвестиционные возможности регионов Кыргызстана     8 октября 2022 года "
+"президент ОАО «Кыргызиндустрия» принял участие в Российско-Кыргызском "
+"инвестиционном форуме, который"
+msgstr ""
+"2022年10月8日吉尔吉斯斯坦各地区投资机会OJSC“Kyrgyzindustria”总裁参加了俄罗斯-"
+"吉尔吉斯一个投资论坛"
+
+#: .\main\templates\client\index.html:117
+msgid "Установление сотрудничества с японским бизнесом"
+msgstr ""
+"2022年10月8日吉尔吉斯斯坦地区投资机会“OJSC“吉尔吉斯工业”主席参加了俄罗斯 - 吉"
+"尔吉斯斯坦一个投资论坛"
+
+#: .\main\templates\client\index.html:118
+msgid ""
+"Установление сотрудничества с японским бизнесом      7 октября 2022 года "
+"состоялась встреча вице-президента ОАО «Кыргызиндустрия» Сарбанова С.Т. с "
+"президентом"
+msgstr ""
+"2022年10月7日与日本企业建立合作关系OJSC “吉尔吉斯工业” Sarbanov S.T. 副总裁"
+"与“会面总统"
+
+#: .\main\templates\client\index.html:127
+msgid "Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии"
+msgstr "OJSC“吉尔吉斯工业”与意大利商业界的合作"
+
+#: .\main\templates\client\index.html:128
+msgid ""
+"Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии      5 октября "
+"2022 года при содействии Посольства Кыргызской Республики в Италии сотрудники"
+msgstr ""
+"10 月 5 日 OJSC “吉尔吉斯工业” 与意大利商界的合作2022年在吉尔吉斯共和国驻意大"
+"利大使馆员工的协助下"
+
+#: .\main\templates\client\index.html:136
+msgid "В Кыргызстане планируется создать Дата-центр"
+msgstr "计划在吉尔吉斯斯坦建立一个数据中心"
+
+#: .\main\templates\client\index.html:137
+msgid ""
+"В Кыргызстане планируется создать Дата-центр      28 сентября 2022 года "
+"состоялась встреча президента ОАО «Кыргызиндустрия» Ж.О. Абдураимова с "
+"делегацией"
+msgstr ""
+"在吉尔吉斯斯坦，计划于 2022 年 9 月 28 日创建一个数据中心吉尔吉斯工业公司主"
+"席 Zh.O. Abduraimov 与”的会面代表团"
+
+#: .\main\templates\client\index.html:152
+msgid "Направления деятельности"
+msgstr "活动"
+
+#: .\main\templates\client\index.html:160
+msgid "производство технической, строительной и других видов продукции"
+msgstr "生产技术、建筑和其他类型的产品"
+
+#: .\main\templates\client\index.html:166
+msgid "производство товаров народного потребления"
+msgstr "消费品生产"
+
+#: .\main\templates\client\index.html:172
+msgid "производство продуктов питания"
+msgstr "食品生产"
+
+#: .\main\templates\client\index.html:178
+msgid "полиграфические услуги, организации средств массовой информации"
+msgstr "印刷服务, 媒体组织"
+
+#: .\main\templates\client\index.html:184
+msgid "профессиональная деятельность на рынке ценных бумаг"
+msgstr "证券市场的专业活动"
+
+#: .\main\templates\client\index.html:190
+msgid "дополнительная деятельность, направленная на поддержание бизнеса"
+msgstr "旨在支持业务的额外活动"
+
+#: .\main\templates\client\index.html:196
+msgid "Виды деятельности, на которые требуются специальные разрешения"
+msgstr "需要特别许可的活动"
+
+#: .\main\templates\client\index.html:202
+msgid "Иные виды деятельности, не противоречащие законодательству КР"
+msgstr "不违反吉尔吉斯共和国法律的其他类型的活动"
+
+#: .\main\templates\client\index.html:226
+#: .\main\templates\client\index.html:234
+#: .\main\templates\client\index.html:242
+#: .\main\templates\client\index.html:250
+msgid "Text"
+msgstr "文本"
+
+#: .\main\templates\client\index.html:226
+#: .\main\templates\client\index.html:234
+#: .\main\templates\client\index.html:242
+#: .\main\templates\client\index.html:250
+msgid "Some text"
+msgstr "一些文字"
+
+#: .\main\templates\client\index.html:267
+msgid "Архив проведенных конкурсов"
+msgstr "举办比赛的档案"
+
+#: .\main\templates\client\index.html:274
+msgid "Конкурс не состялся"
+msgstr "比赛没有举行"
+
+#: .\main\templates\client\index.html:275
+#: .\main\templates\client\index.html:283
+msgid ""
+"Услуг по выполнению строительно-монтажных работ, ремонтных работ и "
+"составлению проектно-сметной документации"
+msgstr "为实施建筑和安装工程、维修工程和服务准备设计和估算文件"
+
+#: .\main\templates\client\index.html:282
+#: .\main\templates\client\index.html:298
+msgid "Конкурс не состоялся"
+msgstr "比赛没有举行"
+
+#: .\main\templates\client\index.html:290
+msgid "Конкурс состоялся. Победитель определен"
+msgstr "比赛进行了。胜者已定"
+
+#: .\main\templates\client\index.html:291
+msgid "Конкурс на закупку легкового электромобиля"
+msgstr "购买电动汽车的竞争"
+
+#: .\main\templates\client\index.html:299
+msgid ""
+"Конкурс на закупку технологической линии по производству пенаполистирола в "
+"блоках и панелей для ОсОО “Кыргызбетонкурулуш”"
+msgstr ""
+"购买用于生产发泡聚苯乙烯的技术生产线的竞争有限责任公司“Kyrgyzbetonkurulush”的"
+"块和面板"
+
+#: .\main\templates\client\index.html:411
+msgid "ПРОЕКТЫ"
+msgstr "项目"
+
+#: .\main\templates\client\index.html:418
+msgid "Все"
+msgstr "全部"
+
+#: .\main\templates\client\index.html:419
+msgid "Реализованные"
+msgstr "实施的"
+
+#: .\main\templates\client\index.html:420
+msgid "Не Реализованные"
+msgstr "未实现"
+
+#: .\main\templates\client\index.html:421
+msgid "В процессе"
+msgstr "进行中"
+
+#: .\main\templates\client\index.html:567
+msgid "Necessitatibus eius consequatur ex aliquid fuga eum quidem"
+msgstr ""
+
+#: .\main\templates\client\index.html:584
+#: .\main\templates\client\index.html:611
+msgid "Абдураимов Жарасул Осмоналиевич"
+msgstr "阿卜杜莱莫夫·扎拉苏尔·奥斯莫纳利耶维奇"
+
+#: .\main\templates\client\index.html:585
+#: .\main\templates\client\index.html:612
+msgid "Президент ОАО “Кыргызиндустрия”"
+msgstr "JSC“吉尔吉斯工业”公司总裁"
+
+#: .\main\templates\client\index.html:629
+msgid "Сарбанов Советбек Талгарбекович"
+msgstr "萨尔巴诺夫·索韦特别克·塔尔加别科维奇"
+
+#: .\main\templates\client\index.html:630
+msgid ""
+"Вице – президент ОАО “Кыргызиндустрия” по НИОКР и инновационным проектам "
+msgstr "JSC“吉尔吉斯工业” 负责研发和创新项目的副总裁"
+
+#: .\main\templates\client\index.html:647
+msgid "William Anderson"
+msgstr ""
+
+#: .\main\templates\client\index.html:648
+msgid "CTO"
+msgstr ""
+
+#: .\main\templates\client\index.html:665
+msgid "Amanda Jepson"
+msgstr ""
+
+#: .\main\templates\client\index.html:666
+msgid "Accountant"
+msgstr ""
+
+#: .\main\templates\client\index.html:681
+msgid "Наши Цели и Задачи"
+msgstr "我们的目标"
+
+#: .\main\templates\client\index.html:687
+msgid "Привлечение и стимулирование инвестиций"
+msgstr "吸引和刺激投资"
+
+#: .\main\templates\client\index.html:691
+msgid "Оздоровление неплатежаспособных хозяйствующих субъектов"
+msgstr "破产企业实体的恢复"
+
+#: .\main\templates\client\index.html:698
+msgid "Создание современных предприятий"
+msgstr "创建现代企业"
+
+#: .\main\templates\client\index.html:702
+msgid "Разработка ТЭО"
+msgstr "开展可行性研究"
+
+#: .\main\templates\client\index.html:709
+#: .\main\templates\client\index.html:720
+msgid "Модернизация промышленности"
+msgstr "工业现代化"
+
+#: .\main\templates\client\index.html:713
+msgid "Стимулирование деятельности промышленных предприятий"
+msgstr "刺激工业企业活动"
+
+#: .\main\templates\client\index.html:735
+msgid "СВЯЖИТЕСЬ С НАМИ"
+msgstr "联系我们"
+
+#: .\main\templates\client\index.html:743
+msgid ""
+"ОАО «Кыргызиндустрия» создано постановлением Кабинета Министров Кыргызской "
+"Республики за №341 от 24 декабря 2021 года со 100%% участием государства в "
+"его уставном капитале, который составляет 1 млрд. сомов."
+msgstr ""
+"由吉尔吉斯共和国内阁第 341 号法令创建2021 年 12 月 24 日，国家 100% 参与其法"
+"定资本，这是10亿索姆。"
+
+#: .\main\templates\client\index.html:757
+msgid "г. Бишкек, пр. Чуй, 106"
+msgstr "比什凯克，Chui Ave.，106"
+
+#: .\main\templates\client\index.html:778
+msgid "Имя"
+msgstr "姓名"
+
+#: .\main\templates\client\index.html:781
+msgid "Номер Телефона"
+msgstr "电话号码"
+
+#: .\main\templates\client\index.html:787
+msgid "Сообщение ..."
+msgstr "信息 ..."
+
+#: .\main\templates\client\index.html:794
+msgid "Отправить"
+msgstr "发送"
+
+#: .\main\views.py:25
+msgid "hello"
+msgstr ""

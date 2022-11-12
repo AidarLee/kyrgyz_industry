@@ -31,15 +31,13 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-/*--------------------------------------------------------------
-# Spinner Box
---------------------------------------------------------------*/
 
-.spinner-box{
-  z-index: 10;
+.CompetitionTitle {
+  display: none;
 }
-.not-visible{
-    display:none;
+
+.CompetitionTitle :hover{
+  display: true;
 }
 
 /*--------------------------------------------------------------

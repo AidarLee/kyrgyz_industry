@@ -1,0 +1,485 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-12 11:50+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app_blog\settings.py:127
+msgid "English"
+msgstr ""
+
+#: .\app_blog\settings.py:128
+msgid "Russian"
+msgstr ""
+
+#: .\app_blog\settings.py:129
+msgid "Deutsch"
+msgstr ""
+
+#: .\app_blog\settings.py:130
+msgid "简体中文"
+msgstr ""
+
+#: .\app_blog\urls.py:23
+msgid "admin/"
+msgstr ""
+
+#: .\main\templates\client\blocks\header.html:7
+msgid "Открытое Акционерное Общество"
+msgstr "Public corporation"
+
+#: .\main\templates\client\blocks\header.html:15
+msgid "О нас"
+msgstr "About Us"
+
+#: .\main\templates\client\blocks\header.html:17
+msgid "Об обществе"
+msgstr "About society"
+
+#: .\main\templates\client\blocks\header.html:18
+#: .\main\templates\client\index.html:566
+msgid "Руководство"
+msgstr "Management"
+
+#: .\main\templates\client\blocks\header.html:19
+msgid "Блоки"
+msgstr "Blocks"
+
+#: .\main\templates\client\blocks\header.html:20
+msgid "Наши пратнеры"
+msgstr "Our partners"
+
+#: .\main\templates\client\blocks\header.html:21
+msgid "Нормативно-правовая база"
+msgstr "Legal Framework"
+
+#: .\main\templates\client\blocks\header.html:22
+msgid "Вакансии"
+msgstr "Jobs"
+
+#: .\main\templates\client\blocks\header.html:25
+msgid "Инвесторам и партнерам"
+msgstr "For investors and partners"
+
+#: .\main\templates\client\blocks\header.html:27
+msgid "Инвестиционный кейс"
+msgstr "Investment case"
+
+#: .\main\templates\client\blocks\header.html:28
+msgid "Стратегия развития"
+msgstr "Development strategy"
+
+#: .\main\templates\client\blocks\header.html:29
+msgid "Проекты и презентации"
+msgstr "Projects and presentations"
+
+#: .\main\templates\client\blocks\header.html:30
+msgid "Отчеты и результаты"
+msgstr "Reports and results"
+
+#: .\main\templates\client\blocks\header.html:33
+msgid "Пресс-центр"
+msgstr "Press center"
+
+#: .\main\templates\client\blocks\header.html:35
+msgid "Пресс-релизы (новости)"
+msgstr "Press releases (news)"
+
+#: .\main\templates\client\blocks\header.html:36
+msgid "Интервью"
+msgstr "Interview"
+
+#: .\main\templates\client\blocks\header.html:37
+msgid "Фотогалерея"
+msgstr "Photo gallery"
+
+#: .\main\templates\client\blocks\header.html:38
+msgid "Брифинг"
+msgstr "Briefing"
+
+#: .\main\templates\client\blocks\header.html:41
+msgid "Закупки"
+msgstr "Procurement"
+
+#: .\main\templates\client\blocks\header.html:43
+#: .\main\templates\client\index.html:266
+msgid "Конкурсы"
+msgstr "Contests"
+
+#: .\main\templates\client\blocks\header.html:44
+msgid "Архив конкурсов"
+msgstr "Contest archive"
+
+#: .\main\templates\client\blocks\header.html:47
+msgid "Контакты"
+msgstr "Contacts"
+
+#: .\main\templates\client\blocks\header.html:48
+msgid "Админ-Панель"
+msgstr "Admin panel"
+
+#: .\main\templates\client\index.html:15 .\main\templates\client\index.html:742
+msgid "ОАО «Кыргызиндустрия»"
+msgstr "JSC «Kyrgyzindustria»"
+
+#: .\main\templates\client\index.html:16
+msgid ""
+"создано постановлением Кабинета Министров Кыргызской Республики за №341 от "
+"24 декабря 2021 года со 100%% участием государства в его уставном капитале, "
+"который составляет 1 млрд. сомов."
+msgstr ""
+"created by the Decree of the Cabinet of Ministers of the Kyrgyz Republic No. "
+"341 dated December 24, 2021 with 100% participation of the state in its "
+"authorized capital, which is 1 billion soms."
+
+#: .\main\templates\client\index.html:18
+msgid "Наши Проекты"
+msgstr "Our projects"
+
+#: .\main\templates\client\index.html:71
+msgid "О НАС"
+msgstr "About us"
+
+#: .\main\templates\client\index.html:77 .\main\templates\client\index.html:153
+msgid ""
+"Основными направлениями промышленной политики, реализуемой ОАО являются:"
+msgstr "The main directions of the industrial policy implemented by JSC are:"
+
+#: .\main\templates\client\index.html:80
+msgid ""
+"Формирование благоприятного инвестиционного и предпринимательского климата."
+msgstr "Formation of a favorable investment and business climate."
+
+#: .\main\templates\client\index.html:81
+msgid "Инновационно-технологическое развитие промышленности."
+msgstr "Innovative and technological development of industry."
+
+#: .\main\templates\client\index.html:82
+msgid "Обеспечение промышленных предприятий востребованными кадрами."
+msgstr "Providing industrial enterprises with demanded personnel."
+
+#: .\main\templates\client\index.html:83
+msgid "Продвижение продукции промышленных предприятий на рынках сбыта."
+msgstr "Promotion of products of industrial enterprises in the markets."
+
+#: .\main\templates\client\index.html:84
+msgid "Создание промышленных кластеров."
+msgstr "Creation of industrial clusters."
+
+#: .\main\templates\client\index.html:85
+msgid ""
+"Оснащение промышленных предприятий энергоресурсами, инженерной и "
+"транспортной инфраструктурой."
+msgstr ""
+"Equipment of industrial enterprises with energy resources, engineering and "
+"transport infrastructure."
+
+#: .\main\templates\client\index.html:90
+msgid ""
+"Открытое Акционерное ОбществоОАО “Кыргызиндустрия” создано решением Кабинета "
+"Министров со 100%% участием государства в его уставном капитале, который "
+"составляет 1 млрд. сомов."
+msgstr ""
+"created by the Decree of the Cabinet of Ministers of the Kyrgyz Republic No. "
+"341 dated December 24, 2021 with 100% participation of the state in its "
+"authorized capital, which is 1 billion soms."
+
+#: .\main\templates\client\index.html:91
+msgid ""
+"Учредителем и единственным акционером Общества является Кабинет Министров "
+"Кыргызской Республики. ОАО «Кыргызиндустрия» является коммерческой "
+"организацией, имеет юридический статус (обладает обособленным имуществом, "
+"имеет самостоятельный баланс, корреспондентские, расчетные, валютные и "
+"другие счета в банках Кыргызской Республики и за ее пределами)."
+msgstr ""
+"The founder and sole shareholder of the Company is the Cabinet of Ministers"
+"of the Kyrgyz Republic. OJSC “Kyrgyzindustria” is a commercial"
+"organization, has a legal status (possesses separate property, "
+"has an independent balance sheet, correspondent, settlement, currency and "
+"other accounts in banks of the Kyrgyz Republic and beyond)."
+
+#: .\main\templates\client\index.html:93
+msgid "Узнать Больше"
+msgstr "To learn more"
+
+#: .\main\templates\client\index.html:108
+msgid "Инвестиционные возможности регионов Кыргызстана"
+msgstr "Investment opportunities of the regions of Kyrgyzstan"
+
+#: .\main\templates\client\index.html:109
+msgid ""
+"Инвестиционные возможности регионов Кыргызстана     8 октября 2022 года "
+"президент ОАО «Кыргызиндустрия» принял участие в Российско-Кыргызском "
+"инвестиционном форуме, который"
+msgstr ""
+"Investment opportunities of the regions of Kyrgyzstan on October 8, 2022"
+"President of JSC «Kyrgyzindustria» took part in the Russian-Kyrgyz "
+"an investment forum that"
+
+#: .\main\templates\client\index.html:117
+msgid "Установление сотрудничества с японским бизнесом"
+msgstr "Establishing cooperation with Japanese business"
+
+#: .\main\templates\client\index.html:118
+msgid ""
+"Установление сотрудничества с японским бизнесом      7 октября 2022 года "
+"состоялась встреча вице-президента ОАО «Кыргызиндустрия» Сарбанова С.Т. с "
+"президентом"
+msgstr ""
+"Establishing cooperation with Japanese business on October 7, 2022"
+"the meeting of the vice-president of JSC «Kyrgyzindustria» Sarbanov S.T. with"
+"president"
+
+#: .\main\templates\client\index.html:127
+msgid "Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии"
+msgstr "Cooperation of JSC «Kyrgyzindustriya» with business circles of Italy"
+
+#: .\main\templates\client\index.html:128
+msgid ""
+"Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии      5 октября "
+"2022 года при содействии Посольства Кыргызской Республики в Италии сотрудники"
+msgstr ""
+"Cooperation of OJSC «Kyrgyzindustria» with business circles of Italy on October 5"
+"2022 with the assistance of the Embassy of the Kyrgyz Republic in Italy employees"
+
+#: .\main\templates\client\index.html:136
+msgid "В Кыргызстане планируется создать Дата-центр"
+msgstr "It is planned to create a data center in Kyrgyzstan"
+
+#: .\main\templates\client\index.html:137
+msgid ""
+"В Кыргызстане планируется создать Дата-центр      28 сентября 2022 года "
+"состоялась встреча президента ОАО «Кыргызиндустрия» Ж.О. Абдураимова с "
+"делегацией"
+msgstr ""
+"In Kyrgyzstan, it is planned to create a data center on September 28, 2022"
+"the meeting of the President of JSC «Kyrgyzindustria» Zh.O. Abduraimov with"
+"delegation"
+
+#: .\main\templates\client\index.html:152
+msgid "Направления деятельности"
+msgstr "Activities"
+
+#: .\main\templates\client\index.html:160
+msgid "производство технической, строительной и других видов продукции"
+msgstr "production of technical, construction and other types of products"
+
+#: .\main\templates\client\index.html:166
+msgid "производство товаров народного потребления"
+msgstr "production of consumer goods"
+
+#: .\main\templates\client\index.html:172
+msgid "производство продуктов питания"
+msgstr "food production"
+
+#: .\main\templates\client\index.html:178
+msgid "полиграфические услуги, организации средств массовой информации"
+msgstr "printing services, media organizations"
+
+#: .\main\templates\client\index.html:184
+msgid "профессиональная деятельность на рынке ценных бумаг"
+msgstr "professional activity in the securities market"
+
+#: .\main\templates\client\index.html:190
+msgid "дополнительная деятельность, направленная на поддержание бизнеса"
+msgstr "additional activities aimed at supporting the business"
+
+#: .\main\templates\client\index.html:196
+msgid "Виды деятельности, на которые требуются специальные разрешения"
+msgstr "Activities that require special permits"
+
+#: .\main\templates\client\index.html:202
+msgid "Иные виды деятельности, не противоречащие законодательству КР"
+msgstr "Other types of activities that do not contradict the legislation of the Kyrgyz Republic"
+
+#: .\main\templates\client\index.html:226
+#: .\main\templates\client\index.html:234
+#: .\main\templates\client\index.html:242
+#: .\main\templates\client\index.html:250
+msgid "Text"
+msgstr ""
+
+#: .\main\templates\client\index.html:226
+#: .\main\templates\client\index.html:234
+#: .\main\templates\client\index.html:242
+#: .\main\templates\client\index.html:250
+msgid "Some text"
+msgstr ""
+
+#: .\main\templates\client\index.html:267
+msgid "Архив проведенных конкурсов"
+msgstr "Creation of industrial clusters."
+
+#: .\main\templates\client\index.html:274
+msgid "Конкурс не состялся"
+msgstr "The competition did not take place"
+
+#: .\main\templates\client\index.html:275
+#: .\main\templates\client\index.html:283
+msgid ""
+"Услуг по выполнению строительно-монтажных работ, ремонтных работ и "
+"составлению проектно-сметной документации"
+msgstr ""
+"Services for the implementation of construction and installation works, repair work and"
+"preparation of design and estimate documentation"
+
+#: .\main\templates\client\index.html:282
+#: .\main\templates\client\index.html:298
+msgid "Конкурс не состоялся"
+msgstr "The competition did not take place"
+
+#: .\main\templates\client\index.html:290
+msgid "Конкурс состоялся. Победитель определен"
+msgstr "The competition took place. The winner is determined"
+
+#: .\main\templates\client\index.html:291
+msgid "Конкурс на закупку легкового электромобиля"
+msgstr "Competition for the purchase of an electric car"
+
+#: .\main\templates\client\index.html:299
+msgid ""
+"Конкурс на закупку технологической линии по производству пенаполистирола в "
+"блоках и панелей для ОсОО “Кыргызбетонкурулуш”"
+msgstr ""
+"Competition for the purchase of a technological line for the production of expanded polystyrene in"
+"blocks and panels for LLC «Kyrgyzbetonkurulush»"
+
+#: .\main\templates\client\index.html:411
+msgid "ПРОЕКТЫ"
+msgstr "PROJECTS"
+
+#: .\main\templates\client\index.html:418
+msgid "Все"
+msgstr "All"
+
+#: .\main\templates\client\index.html:419
+msgid "Реализованные"
+msgstr "Implemented"
+
+#: .\main\templates\client\index.html:420
+msgid "Не Реализованные"
+msgstr "Not Realized"
+
+#: .\main\templates\client\index.html:421
+msgid "В процессе"
+msgstr "In the process"
+
+#: .\main\templates\client\index.html:567
+msgid "Necessitatibus eius consequatur ex aliquid fuga eum quidem"
+msgstr "Necessitatibus eius consequatur ex aliquid fuga eum quidem"
+
+#: .\main\templates\client\index.html:584
+#: .\main\templates\client\index.html:611
+msgid "Абдураимов Жарасул Осмоналиевич"
+msgstr "Abduraimov Zharasul Osmonalievich"
+
+#: .\main\templates\client\index.html:585
+#: .\main\templates\client\index.html:612
+msgid "Президент ОАО “Кыргызиндустрия”"
+msgstr "President of OJSC «Kyrgyzindustria»"
+
+#: .\main\templates\client\index.html:629
+msgid "Сарбанов Советбек Талгарбекович"
+msgstr "Sarbanov Sovetbek Talgarbekovich"
+
+#: .\main\templates\client\index.html:630
+msgid ""
+"Вице – президент ОАО “Кыргызиндустрия” по НИОКР и инновационным проектам "
+msgstr "Vice-President of OJSC «Kyrgyzindustria» for R&D and innovation projects"
+
+#: .\main\templates\client\index.html:647
+msgid "William Anderson"
+msgstr ""
+
+#: .\main\templates\client\index.html:648
+msgid "CTO"
+msgstr ""
+
+#: .\main\templates\client\index.html:665
+msgid "Amanda Jepson"
+msgstr ""
+
+#: .\main\templates\client\index.html:666
+msgid "Accountant"
+msgstr ""
+
+#: .\main\templates\client\index.html:681
+msgid "Наши Цели и Задачи"
+msgstr "Our Goals and Objectives"
+
+#: .\main\templates\client\index.html:687
+msgid "Привлечение и стимулирование инвестиций"
+msgstr "Attracting and stimulating investments"
+
+#: .\main\templates\client\index.html:691
+msgid "Оздоровление неплатежеспособных хозяйствующих субъектов"
+msgstr "Recovery of insolvent business entities"
+
+#: .\main\templates\client\index.html:698
+msgid "Создание современных предприятий"
+msgstr "Creation of industrial clusters."
+
+#: .\main\templates\client\index.html:702
+msgid "Разработка ТЭО"
+msgstr "Development of a feasibility study"
+
+#: .\main\templates\client\index.html:709
+#: .\main\templates\client\index.html:720
+msgid "Модернизация промышленности"
+msgstr "Creation of industrial clusters."
+
+#: .\main\templates\client\index.html:713
+msgid "Стимулирование деятельности промышленных предприятий"
+msgstr "Promotion of products of industrial enterprises in the markets."
+
+#: .\main\templates\client\index.html:735
+msgid "СВЯЖИТЕСЬ С НАМИ"
+msgstr "CONTACT US"
+
+#: .\main\templates\client\index.html:743
+msgid ""
+"ОАО «Кыргызиндустрия» создано постановлением Кабинета Министров Кыргызской "
+"Республики за №341 от 24 декабря 2021 года со 100%% участием государства в "
+"его уставном капитале, который составляет 1 млрд. сомов."
+msgstr ""
+"created by the Decree of the Cabinet of Ministers of the Kyrgyz Republic No. "
+"341 dated December 24, 2021 with 100% participation of the state in its "
+"authorized capital, which is 1 billion soms."
+
+#: .\main\templates\client\index.html:757
+msgid "г. Бишкек, пр. Чуй, 106"
+msgstr "Bishkek, Chui Ave., 106"
+
+#: .\main\templates\client\index.html:778
+msgid "Имя"
+msgstr "Name"
+
+#: .\main\templates\client\index.html:781
+msgid "Номер Телефона"
+msgstr "Phone number"
+
+#: .\main\templates\client\index.html:787
+msgid "Сообщение ..."
+msgstr "Message ..."
+
+#: .\main\templates\client\index.html:794
+msgid "Отправить"
+msgstr "Send"
+
+#: .\main\views.py:25
+msgid "hello"
+msgstr ""
