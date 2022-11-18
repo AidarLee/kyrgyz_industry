@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'rosetta',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -79,9 +80,9 @@ WSGI_APPLICATION = 'app_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': 'KG_INDUSTRY',
-        'USER': 'Userr',
-        'PASSWORD': '123456',
+        'NAME': 'Industry',
+        'USER': 'ajo',
+        'PASSWORD': '1330',
         'HOST': '127.0.0.1',
         'PORT': '1433',
         'OPTIONS': {
