@@ -8,8 +8,6 @@ from django.db import models
 from django.utils.timezone import now
 from django.core.validators import validate_image_file_extension
 from django.core.validators import FileExtensionValidator
-from ckeditor.fields import RichTextField
-from PIL import Image
 import uuid
 import os
 
@@ -27,7 +25,6 @@ class ProjectCategory(models.Model):
     
     class Meta:
         db_table="projectCategory" 
-        ordering = ["-id"]
 
 
 #Галерея 
@@ -63,49 +60,32 @@ def get_file_path(instance, filename):
 
 # Фото 
 class PhotosProject(models.Model):
-    URL=models.ImageField   (verbose_name="Путь к картинке", upload_to = get_file_path)
+    URL=models.FileField(verbose_name="Путь к картинке", upload_to = get_file_path)
     Caption=models.CharField(max_length=70,verbose_name="Название картинки", default='')
     Gallery=models.ForeignKey("galleryProject",on_delete=models.RESTRICT,verbose_name="Галерея")
     
     path_url = "static/client/img/projects/"
-    
+    class Meta:
+        ordering = ['-id']
         
     def __str__(self) -> str:
         return self.Caption 
     
-    def save(self, *args, **kwargs):
-        super(PhotosProject, self).save(*args, **kwargs)
-        image = Image.open(self.URL.path)
-        if image.width > 800 or image.height > 600:
-            output_size = (800, 600)
-            image.thumbnail(output_size)
-            image.save(self.URL.path)
-    class Meta:
-        ordering = ['-id']
 
 class PhotosNews(models.Model):
     URL=models.ImageField(verbose_name="Путь картинки", 
                          upload_to = get_file_path,
                          validators = [validate_image_file_extension])
-    Caption=models.CharField(max_length=70,verbose_name="Название картинки", default='')
+    Caption=models.CharField(max_length=70,verbose_name="Название картинки")
     Gallery=models.ForeignKey("galleryNews",on_delete=models.RESTRICT,verbose_name="Галерея")
     
     path_url = "static/client/img/news/"
-  
+    class Meta:
+        ordering = ['-id']
         
     def __str__(self) -> str:
         return self.Caption 
-    
-    def save(self, *args, **kwargs):
-        super(PhotosNews, self).save(*args, **kwargs)
-        image = Image.open(self.URL.path)
-        if image.width > 600 or image.height > 400:
-            output_size = (600, 400)
-            image.thumbnail(output_size)
-            image.save(self.URL.path)
-            
-    class Meta:
-        ordering = ['-id']
+
 class Contest_Status_Choice(models.TextChoices):
     ON_PROCCESS = "Актуально", "Актуально"
     HAS_FINISHED = "Проведён", "Проведён"
@@ -116,10 +96,15 @@ class Project_Status_Choice(models.TextChoices):
     HAS_FINISHED = "Реализован", "Реализован"
     NOT_FINISHED = "Не реализован", "Не реализован"
 
+class Vacancy_Status_Choice(models.TextChoices):
+    TRUE = "Актуально", "Актуально"
+    FALSE = "Данная вакансия не актуальна", "Данная вакансия не актуальна"
+
 # Проекты
 class Projects(models.Model):
     Title=models.CharField(max_length=70,verbose_name="Заголовок проекта")
-    Description=RichTextField(verbose_name="Описание")
+    Short_Description = models.CharField(max_length=110,verbose_name="Краткое описание")
+    Description=models.TextField(verbose_name="Описание")
     Date_added=models.DateTimeField(verbose_name="Дата публикации", default=now)
     # Язык проекта
     Language=models.CharField(
@@ -149,6 +134,7 @@ class Projects(models.Model):
 
 class Contests(models.Model):
     Title=models.CharField(max_length=180,verbose_name="Описание конкурса")
+    Short_Description = models.CharField(max_length=110,verbose_name="Краткое описание")
     Document = models.FileField(
                                 verbose_name="Документ", 
                                 upload_to=get_file_path, 
@@ -171,14 +157,14 @@ class Contests(models.Model):
         ordering = ['-id']
         
     def __str__(self) -> str:
-        return self.Title 
+        return self.Caption 
 
 # Новости
 
 class News(models.Model):
     Title=models.CharField(max_length=70,verbose_name="Заголовок новости")
     Short_Description = models.CharField(max_length=110,verbose_name="Краткое описание")
-    Description=RichTextField(verbose_name="Описание")
+    Description=models.TextField(verbose_name="Описание")
     Date_added=models.DateTimeField(verbose_name="Дата публикации", default=now)
     Language= models.CharField(
                                max_length = 10, 
@@ -188,5 +174,23 @@ class News(models.Model):
                                )
     Gallery=models.ForeignKey("galleryNews",on_delete=models.RESTRICT,verbose_name="Галерея")
 
-    class Meta:
-        ordering = ['-id']
+# Вакансии
+class Vacancies(models.Model):
+    company = models.CharField(max_length=70, verbose_name = "Компания")
+    Language=models.CharField(
+                               max_length = 10, 
+                               choices = LanguageChoice.choices,
+                               default = LanguageChoice.RU,
+                               verbose_name = "Язык"
+                               )
+    pub_date = models.DateTimeField(verbose_name="Дата размещения", default=now)
+    positions = models.CharField(max_length = 70, verbose_name="Должность")
+    salary = models.CharField(max_length=70, verbose_name="Оклад")
+    description = models.TextField(verbose_name = "Описание")
+    status = models.CharField(
+        max_length = 30,
+        choices = Vacancy_Status_Choice.choices,
+        default = Vacancy_Status_Choice.TRUE,
+        verbose_name = "Статус"
+    )
+    email_company = models.EmailField(max_length = 254)

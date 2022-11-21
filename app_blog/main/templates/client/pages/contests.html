@@ -1,0 +1,73 @@
+{% extends 'client/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block page_title %}{% translate "Архив проведенных конкурсов" %}{% endblock page_title %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{% translate "Конкурсы" %}</h2>
+          <ol>
+            <li><a href="{% url 'index'%}">{% translate "Главная" %}</a></li>
+            <li>{% translate "Конкурсы"%}</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="contests" class="services">
+        <div class="container">
+  
+          <div class="section-title" data-aos="fade-up">
+            <h2>{% translate "Архив проведенных конкурсов" %}</h2>
+          </div>
+  
+          <div class="row">
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">{% translate "Конкурс не состялся" %}</a></h4>
+                <p class="description">{% translate "Услуг по выполнению строительно-монтажных работ, ремонтных работ и составлению проектно-сметной документации" %}</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">{% translate "Конкурс не состоялся" %}</a></h4>
+                <p class="description">{% translate "Услуг по выполнению строительно-монтажных работ, ремонтных работ и составлению проектно-сметной документации" %}</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">{% translate "Конкурс состоялся. Победитель определен" %}</a></h4>
+                <p class="description">{% translate "Конкурс на закупку легкового электромобиля" %}</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4 class="title"><a href="">{% translate "Конкурс не состоялся" %}</a></h4>
+                <p class="description">{% translate "Конкурс на закупку технологической линии по производству пенаполистирола в блоках и панелей для ОсОО “Кыргызбетонкурулуш”" %}</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+
+    </main><!-- End #main -->
+
+{% endblock content %}

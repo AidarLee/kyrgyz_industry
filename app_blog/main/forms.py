@@ -163,3 +163,40 @@ class ContestForm(ModelForm):
                     )
             
         }
+
+
+
+# News
+class VacanciesForm(ModelForm):
+    class Meta:
+        model = Vacancies
+        fields = ['company', 'Language', 'pub_date', 'description', 'salary', 'positions', 'status', 'email_company']
+    
+        widgets = {
+            'company' : TextInput(
+                attrs = {"type" : "text", "class" : "form-control", "id" : "company", "placeholder" : "Название компании","size" : 70, 'required': True}
+            ),
+            'Language' : forms.Select(
+                attrs={"class": "form-control", 'required': True,  "id" : "language"},
+                choices=LanguageChoice.choices
+            ),
+            'pub_date' : DateTimeInput(
+                attrs={'type': 'datetime-local', "class" : "form-control", "id" : "date_created", "required" : False}
+                ),
+            'description' : Textarea(
+                attrs = {"class" : "form-control", "id" : "description", "placeholder" : "Полное содержание", 'required': True}
+                ),
+            'salary' : TextInput(
+                attrs = {"type" : "text", "class" : "form-control", "id" : "salary", "placeholder" : "Оклад","size" : 70, 'required': True}
+            ),
+            'positions' : TextInput(
+                attrs = {"type" : "text", "class" : "form-control", "id" : "positions", "placeholder" : "Должность","size" : 70, 'required': True}
+            ),
+            'status' : forms.Select(
+                attrs ={ "class": "form-control", 'required': True, "id" : "Status"},
+                choices= Vacancy_Status_Choice.choices
+                ),
+            'email_company' : TextInput(
+                attrs = {"type" : "mail", "class" : "form-control", "id" : "email_company", "placeholder" : "Почта компании", "size" : 254, 'required': True}
+            ),
+        }

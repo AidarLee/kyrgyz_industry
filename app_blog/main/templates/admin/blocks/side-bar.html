@@ -68,6 +68,18 @@
                 </div>
               </li>
               
+              <li class="nav-item" id="vacancies-panel">
+                <a class="nav-link" data-toggle="collapse" href="#vacanciese" aria-expanded="{% if expand_vacancies %}true{% else %}false{% endif %}" aria-controls="vacanciese">
+                  <span class="menu-title">Вакансии</span>
+                  <i class="icon-book-open menu-icon"></i>
+                </a>
+                <div class="collapse{% if expand_vacancies %}show{% endif %}" id="vacanciese">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link {% if active_vacancies %}active{% endif %}" href="{% url 'vacancies_all' %}">Все вакансии</a></li>
+                  </ul>
+                </div>
+              </li>
+              
               <li class="nav-item nav-category"><span class="nav-link">Руководство</span></li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">

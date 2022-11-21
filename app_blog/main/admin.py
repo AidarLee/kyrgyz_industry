@@ -6,6 +6,7 @@ admin.site.register(ProjectCategory)
 admin.site.register(Contests)
 admin.site.register(GalleryNews)
 admin.site.register(PhotosNews)
+admin.site.register(Vacancies)
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):

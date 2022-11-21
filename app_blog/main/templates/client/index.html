@@ -90,7 +90,7 @@
               {% translate "Открытое Акционерное ОбществоОАО “Кыргызиндустрия” создано решением Кабинета Министров со 100% участием государства в его уставном капитале, который составляет 1 млрд. сомов." %}
               {% translate "Учредителем и единственным акционером Общества является Кабинет Министров Кыргызской Республики. ОАО «Кыргызиндустрия» является коммерческой организацией, имеет юридический статус (обладает обособленным имуществом, имеет самостоятельный баланс, корреспондентские, расчетные, валютные и другие счета в банках Кыргызской Республики и за ее пределами)." %}
             </p>
-            <a href="#" class="btn-learn-more">{% translate "Узнать Больше" %}</a>
+            <a href="{% url 'about_company' %}" class="btn-learn-more">{% translate "Узнать Больше" %}</a>
           </div>
         </div>
 
@@ -107,7 +107,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="">{% translate "Инвестиционные возможности регионов Кыргызстана" %}</a></h5>
                 <p class="card-text">{% translate "Инвестиционные возможности регионов Кыргызстана     8 октября 2022 года президент ОАО «Кыргызиндустрия» принял участие в Российско-Кыргызском инвестиционном форуме, который" %}</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Читать</a></div>
+                <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> {% translate "Читать" %}</a></div>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="">{% translate "Установление сотрудничества с японским бизнесом" %}</a></h5>
                 <p class="card-text">{% translate "Установление сотрудничества с японским бизнесом      7 октября 2022 года состоялась встреча вице-президента ОАО «Кыргызиндустрия» Сарбанова С.Т. с президентом" %}</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Читать</a></div>
+                <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> Читать</a></div>
               </div>
             </div>
 
@@ -126,7 +126,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="">{% translate "Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии" %}</a></h5>
                 <p class="card-text">{% translate "Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии      5 октября 2022 года при содействии Посольства Кыргызской Республики в Италии сотрудники" %}</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Читать</a></div>
+                <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> Читать</a></div>
               </div>
             </div>
           </div>
@@ -135,14 +135,18 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="">{% translate "В Кыргызстане планируется создать Дата-центр" %}</a></h5>
                 <p class="card-text">{% translate "В Кыргызстане планируется создать Дата-центр      28 сентября 2022 года состоялась встреча президента ОАО «Кыргызиндустрия» Ж.О. Абдураимова с делегацией" %}</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Читать</a></div>
+                <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> Читать</a></div>
               </div>
             </div>
           </div>
         </div>
 
       </div>
+
+      <a href="{% url 'news' %}" id="more-news" class="btn-learn-more">{% translate "Показать больше" %}</a>
+
     </section><!-- End More Services Section -->
+
 
     <!-- ======= Features Section ======= -->
     <section id="activity" class="features">
@@ -157,49 +161,49 @@
           <div class="col-lg-3 col-md-4">
             <div class="icon-box">
               <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">{% translate "производство технической, строительной и других видов продукции" %}</a></h3>
+              <h3><a href="#">{% translate "производство технической, строительной и других видов продукции" %}</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">{% translate "производство товаров народного потребления" %}</a></h3>
+              <h3><a href="#">{% translate "производство товаров народного потребления" %}</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">{% translate "производство продуктов питания" %}</a></h3>
+              <h3><a href="#">{% translate "производство продуктов питания" %}</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
               <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">{% translate "полиграфические услуги, организации средств массовой информации" %}</a></h3>
+              <h3><a href="#">{% translate "полиграфические услуги, организации средств массовой информации" %}</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">{% translate "профессиональная деятельность на рынке ценных бумаг" %}</a></h3>
+              <h3><a href="#">{% translate "профессиональная деятельность на рынке ценных бумаг" %}</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">{% translate "дополнительная деятельность, направленная на поддержание бизнеса" %}</a></h3>
+              <h3><a href="#">{% translate "дополнительная деятельность, направленная на поддержание бизнеса" %}</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">{% translate "Виды деятельности, на которые требуются специальные разрешения" %}</a></h3>
+              <h3><a href="#">{% translate "Виды деятельности, на которые требуются специальные разрешения" %}</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
               <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">{% translate "Иные виды деятельности, не противоречащие законодательству КР" %}</a></h3>
+              <h3><a href="#">{% translate "Иные виды деятельности, не противоречащие законодательству КР" %}</a></h3>
             </div>
           </div>
         </div>
@@ -302,106 +306,11 @@
 
         </div>
 
+        <a href="{% url 'contests' %}" id="more-news" class="btn-learn-more">{% translate "Показать больше" %}</a>
+
       </div>
+
     </section><!-- End Services Section -->
-
-   
-
-    
-
-    <!-- ======= Testimonials Section 
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Проведенные Конкурсы</h2>
-          <p>Magnam dolores commodi suscipit eum quidem consectetur velit</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{% static 'client/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{% static 'client/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{% static 'client/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{% static 'client/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="{% static 'client/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -409,7 +318,6 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>{% translate "ПРОЕКТЫ" %}</h2>
-          <p>........</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
@@ -434,7 +342,7 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class='bx bx-collapse-alt'></i></a>
-                  <a href="{% url 'detail' %}" title="More Details"><i class='bx bx-right-arrow-alt'></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class='bx bx-right-arrow-alt'></i></a>
                 </div>
               </div>
             </div>
@@ -449,7 +357,7 @@
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class='bx bx-collapse-alt'></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -463,7 +371,7 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -477,7 +385,7 @@
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class='bx bx-right-arrow-alt'></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class='bx bx-right-arrow-alt'></i></a>
                 </div>
               </div>
             </div>
@@ -491,7 +399,7 @@
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -505,7 +413,7 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -519,7 +427,7 @@
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -533,7 +441,7 @@
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -547,13 +455,15 @@
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="{% static 'client/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="{% url 'project_detail' %}" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
+
+        <a href="{% url 'projects' %}" id="more-news" class="btn-learn-more">{% translate "Показать больше" %}</a>
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -564,168 +474,139 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>{% translate "Руководство" %}</h2>
-          <p>{% translate "Necessitatibus eius consequatur ex aliquid fuga eum quidem" %}</p>
         </div>
 
-        <div class="row">
+        <div class="row gy-4">
 
-          <div style="margin:auto;" class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+          <div class="col-lg-4" style="margin:auto; width: 100%;" >
+            <section id="team" class="team section-bg">
+                <div class="container">
+          
+                    <div style="margin:auto; width: 23%" class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                      <div class="member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img">
+                          <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                         <a href="{% url 'president' %}"><h4>{% translate "Абдураимов Жарасул Осмоналиевич" %}</h4></a>
+                          <span>{% translate "Президент ОАО “Кыргызиндустрия”" %}</span>
+                        </div>
+                      </div>
+                    </div>
+          
                 </div>
-              </div>
-              <div class="member-info">
-                <h4>{% translate "Абдураимов Жарасул Осмоналиевич" %}</h4>
-                <span>{% translate "Президент ОАО “Кыргызиндустрия”" %}</span>
-              </div>
-            </div>
+              </section><!-- End Team Section -->
+          
+              <!-- ======= Team Section ======= -->
+              <section id="team" class="team section-bg" style="margin-top: -5%; width: 100%;">
+                <div class="container">
+                  <div class="row">
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                      <div class="member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img">
+                          <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                            <a href="{% url 'president' %}"><h4>{% translate "Сарбанов Советбек Талгарбекович" %}</h4></a>
+                          <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по НИОКР и инновационным проектам " %}</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                      <div class="member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img">
+                          <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                            <a href="{% url 'president' %}"><h4>{% translate "Байышбеков Азамат Байышбекович" %}</h4></a>
+                          <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по внешнеэкономическим связям и торговле" %}</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                          <div class="member-img">
+                            <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <a href="{% url 'president' %}"><h4>{% translate "Сагынбаев Жиргалбек Калмуратович" %}</h4>
+                            <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по промышленным отраслям" %}</span>
+                          </div>
+                        </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                          <div class="member-img">
+                            <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <a href="{% url 'president' %}"><h4>{% translate "Асанов Тургун Эмилевич" %}</h4></a>
+                            <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по экономике и финансам " %}</span>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                          <div class="member-img">
+                            <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <a href="{% url 'president' %}"><h4>{% translate "FIO" %}</h4></a>
+                            <span>{% translate "Руководитель аппарата" %}</span>
+                          </div>
+                        </div>
+                    </div>
+          
+                  </div>
+          
+                </div>
+              </section><!-- End Team Section -->
           </div>
         </div>
 
       </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg" style="margin-top: -7%;">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>{% translate "Абдураимов Жарасул Осмоналиевич" %}</h4>
-                <span>{% translate "Президент ОАО “Кыргызиндустрия”" %}</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="{% static 'client/img/team/team-2.jpg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>{% translate "Сарбанов Советбек Талгарбекович" %}</h4>
-                <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по НИОКР и инновационным проектам " %}</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="{% static 'client/img/team/team-3.jpg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>{% translate "William Anderson" %}</h4>
-                <span>{% translate "CTO" %}</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="{% static 'client/img/team/team-4.jpg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>{% translate "Amanda Jepson" %}</h4>
-                <span>{% translate "Accountant" %}</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="goals" class="faq">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>{% translate "Наши Цели и Задачи" %}</h2>
-        </div>
-
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-5">
-            <i class="ri-check-double-line"></i>
-            <h4>{% translate "Привлечение и стимулирование инвестиций" %}</h4>
-          </div>
-          <div class="col-lg-7">
-            <i class="ri-check-double-line"></i>
-            <h4>{% translate "Оздоровление неплатежаспособных хозяйствующих субъектов" %}</h4>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-5">
-            <i class="ri-check-double-line"></i>
-            <h4>{% translate "Создание современных предприятий" %}</h4>
-          </div>
-          <div class="col-lg-7">
-            <i class="ri-check-double-line"></i>
-            <h4>{% translate "Разработка ТЭО" %}</h4>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-5">
-            <i class="ri-check-double-line"></i>
-            <h4>{% translate "Модернизация промышленности" %}</h4>
-          </div>
-          <div class="col-lg-7">
-            <i class="ri-check-double-line"></i>
-            <h4>{% translate "Стимулирование деятельности промышленных предприятий" %}</h4>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="col-lg-5">
-            <i class="ri-check-double-line"></i>
-            <h4>{% translate "Модернизация промышленности" %}</h4>
-          </div>
-          <div class="col-lg-7">
-            
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-      </div>
-    </section><!-- End F.A.Q Section -->
+    </section><!-- End Portfolio Details Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">

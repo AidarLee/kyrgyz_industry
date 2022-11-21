@@ -1,0 +1,163 @@
+{% extends 'client/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block page_title %}{% translate "Руководство" %}{% endblock page_title %}
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{% translate "Руководство" %}</h2>
+          <ol>
+            <li><a href="{% url 'index'%}">{% translate "Главная" %}</a></li>
+            <li>{% translate "Руководство"%}</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details" >
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" style="margin:auto; width: 100%;" >
+            <section id="team" class="team section-bg">
+                <div class="container">
+          
+                    <div style="margin:auto; width: 23%" class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                      <div class="member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img">
+                          <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                         <a href=""><h4>{% translate "Абдураимов Жарасул Осмоналиевич" %}</h4></a>
+                          <span>{% translate "Президент ОАО “Кыргызиндустрия”" %}</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                </div>
+              </section><!-- End Team Section -->
+          
+              <!-- ======= Team Section ======= -->
+              <section id="team" class="team section-bg" style="margin-top: -5%; width: 100%;">
+                <div class="container">
+                  <div class="row">
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                      <div class="member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img">
+                          <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                            <a href=""><h4>{% translate "Сарбанов Советбек Талгарбекович" %}</h4></a>
+                          <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по НИОКР и инновационным проектам " %}</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                      <div class="member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img">
+                          <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                          <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                          </div>
+                        </div>
+                        <div class="member-info">
+                            <a href=""><h4>{% translate "Байышбеков Азамат Байышбекович" %}</h4></a>
+                          <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по внешнеэкономическим связям и торговле" %}</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                          <div class="member-img">
+                            <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <a href=""><h4>{% translate "Сагынбаев Жиргалбек Калмуратович" %}</h4>
+                            <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по промышленным отраслям" %}</span>
+                          </div>
+                        </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                          <div class="member-img">
+                            <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <a href=""><h4>{% translate "Асанов Тургун Эмилевич" %}</h4></a>
+                            <span>{% translate "Вице – президент ОАО “Кыргызиндустрия” по экономике и финансам " %}</span>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="width: 20%;">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                          <div class="member-img">
+                            <img src="{% static 'client/img/team/president.jpeg' %}" class="img-fluid" alt="">
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                          </div>
+                          <div class="member-info">
+                            <a href=""><h4>{% translate "FIO" %}</h4></a>
+                            <span>{% translate "Руководитель аппарата" %}</span>
+                          </div>
+                        </div>
+                    </div>
+          
+                  </div>
+          
+                </div>
+              </section><!-- End Team Section -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+{% endblock content %}

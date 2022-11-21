@@ -1,0 +1,74 @@
+{% extends 'client/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block page_title %}{% translate "Пресс-релизы" %}{% endblock page_title %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{% translate "Новости" %}</h2>
+          <ol>
+            <li><a href="{% url 'index'%}">{% translate "Главная" %}</a></li>
+            <li>{% translate "Новости"%}</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+         <!-- ======= More Services Section ======= -->
+         <section id="more-services" class="more-services">
+            <div class="container">
+      
+              <div class="row">
+                <div class="col-md-6 d-flex align-items-stretch">
+                  <div class="card" style='background-image: url("{% static 'client/img/news/22-300x200.jpg' %}");' data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="">{% translate "Инвестиционные возможности регионов Кыргызстана" %}</a></h5>
+                      <p class="card-text">{% translate "Инвестиционные возможности регионов Кыргызстана     8 октября 2022 года президент ОАО «Кыргызиндустрия» принял участие в Российско-Кыргызском инвестиционном форуме, который" %}</p>
+                      <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> {% translate "Читать" %}</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                  <div class="card" style='background-image: url("{% static 'client/img/news/japon.jpg' %}");' data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="">{% translate "Установление сотрудничества с японским бизнесом" %}</a></h5>
+                      <p class="card-text">{% translate "Установление сотрудничества с японским бизнесом      7 октября 2022 года состоялась встреча вице-президента ОАО «Кыргызиндустрия» Сарбанова С.Т. с президентом" %}</p>
+                      <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> Читать</a></div>
+                    </div>
+                  </div>
+      
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="card" style='background-image: url("{% static 'client/img/news/italy.jpg' %}");' data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="">{% translate "Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии" %}</a></h5>
+                      <p class="card-text">{% translate "Сотрудничество ОАО «Кыргызиндустрия» с бизнес-кругами Италии      5 октября 2022 года при содействии Посольства Кыргызской Республики в Италии сотрудники" %}</p>
+                      <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="card" style='background-image: url("{% static 'client/img/news/data-center.jpg' %}");' data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="">{% translate "В Кыргызстане планируется создать Дата-центр" %}</a></h5>
+                      <p class="card-text">{% translate "В Кыргызстане планируется создать Дата-центр      28 сентября 2022 года состоялась встреча президента ОАО «Кыргызиндустрия» Ж.О. Абдураимова с делегацией" %}</p>
+                      <div class="read-more"><a href="{% url 'news_detail' %}"><i class="bi bi-arrow-right"></i> Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </section><!-- End More Services Section -->
+
+    </main><!-- End #main -->
+
+{% endblock content %}

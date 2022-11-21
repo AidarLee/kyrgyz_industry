@@ -7,6 +7,7 @@ urlpatterns = [
         path('accounts/logout/', views.logout_page, name = 'logout_page'),
         path('detail/', views.detail, name='detail'),
         path('admin-panel/main/', views.admin_index_page, name='admin_panel'),
+        
         # News View
         path('admin-panel/news/all/', views.NewsListView.as_view(), name='news_all'),
         path('admin-panel/news/create/', views.NewsCreateView.as_view(), name='news_create'),
@@ -49,4 +50,22 @@ urlpatterns = [
         path('admin-panel/projects/create/', views.ProjectCreateView.as_view(), name='projects_create'),
         path('admin-panel/projects/update/<int:pk>/', views.ProjectUpdateView.as_view(), name='projects_update'),
         path('admin-panel/projects/delete/<int:id>/', views.projects_delete, name='projects_delete'),
+
+        # Vacancies View
+        path('admin-panel/vacancies/', views.VacanciesListView.as_view(), name='vacancies_all'),
+        path('admin-panel/vacancies/create/', views.VacanciesCreateView.as_view(), name='vacancies_create'),
+        path('admin-panel/vacancies/update/<int:pk>/', views.VacanciesUpdateView.as_view(), name='vacancies_update'),
+        path('admin-panel/vacancies/delete/<int:id>/', views.vacancies_delete, name='vacancies_delete'),
+
+        # Static Pages
+        path('about_company', views.about_company, name='about_company'),
+        path('president', views.president, name='president'),
+        path('gallery', views.gallery, name='gallery'),
+        path('contests', views.contests, name='contests'),
+        path('news', views.news, name='news'),
+        path('news_detail', views.news_detail, name='news_detail'),
+        path('projects', views.projects, name='projects'),
+        path('project_detail', views.project_detail, name='project_detail'),
+        path('veep', views.veep, name='veep'),
+        path('vacancies', views.vacancies, name='vacancies'),
 ]

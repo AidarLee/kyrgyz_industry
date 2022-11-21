@@ -22,9 +22,63 @@ from django.utils.translation import get_language, activate, gettext
 
 def index(request):
     trans = translate(language='ru')
-    last_news = News.objects.all().order_by("-id")[:4]
-    context = {'last_news': last_news, 'trans':trans}
-    return render(request, "index.html", context)
+    context = {'trans':trans}
+    return render(request, "client/index.html", context)
+
+def about_company(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/about_company.html", context)
+
+def blog_detail(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/blog_detail.html", context)
+
+def president(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/president.html", context)
+
+def gallery(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/gallery.html", context)
+
+def contests(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/contests.html", context)
+
+def news(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/news.html", context)
+
+def news_detail(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/news_detail.html", context)
+
+def projects(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/projects.html", context)
+
+def project_detail(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/project_detail.html", context)
+
+def veep(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/veep.html", context)
+
+def vacancies(request):
+    trans = translate(language='ru')
+    context = {'trans':trans}
+    return render(request, "client/pages/vacancies.html", context)
 
 def translate(language):
     cur_language = get_language()
@@ -47,7 +101,6 @@ def error_503(request):
 def index(request):
     template_name = "client/index.html"
     return render(request, template_name, {})
-
 
 def detail(request):
     template_name = "client/pages/blog_detail.html"
@@ -644,6 +697,85 @@ def get_last_projects(request):
     template_name = "admin/admin.html"
     context = {
         "last_projects" : last_ten
+    }
+    
+    return render(request, template_name, context)
+
+
+class VacanciesView(View):
+    model = Vacancies
+    form_class = VacanciesForm
+    active_panel = "vacancies-panel"
+    extra_context = {
+        "is_active" : active_panel,
+        "active_vacancies" : "active",
+        "expand_vacancies" : "show",
+        }
+    
+class VacanciesListView(LoginRequiredMixin, VacanciesView, ListView):
+    login_url = "login_page"
+    template_name = "admin/pages/vacancies/vacancies_list.html"
+    
+
+class VacanciesCreateView(LoginRequiredMixin, SuccessMessageMixin, VacanciesView, CreateView):
+    login_url = 'login_page'
+    template_name = 'admin/pages/vacancies/vacancies_form.html'
+    redirect_field_name = "vacancies_create"
+    def get(self, request, *args, **kwargs):
+        form = VacanciesForm()
+        context = {
+            "form" : form,
+            "is_active" : self.active_panel,
+            "active_vacancies" : "active",
+            "expand_vacancies" : "show",
+        }
+        return render(request, self.template_name, context=context)
+    
+    def post(self, request, *args, **kwargs):
+        if request.method == 'POST':
+            form = VacanciesForm(request.POST)
+            try:
+                form.save()
+                messages.success(request, "Запись успешно добавлено!")
+                return redirect(self.redirect_field_name)
+            except Exception as e:
+                messages.error(request, e)
+                return redirect(self.redirect_field_name)
+        else:
+            messages.error(request, "Invalid Method")
+            return redirect(self.redirect_field_name)     
+        
+class VacanciesUpdateView(LoginRequiredMixin, SuccessMessageMixin, VacanciesView, UpdateView):
+    login_url = 'login_page'
+    success_url = reverse_lazy("vacancies_all")
+    template_name = "admin/pages/vacancies/vacancies_edit.html"
+    success_message = "Запись успешно обновлена!"
+    
+    
+def vacancies_delete(request, id):
+    context = {}
+    obj = get_object_or_404(Vacancies, id = id)
+    if request.method =="POST":
+        
+        try:
+            # delete object
+            obj.delete()
+            # after deleting redirect to
+            # home page
+            messages.success(request, "Запись успешно удалено!")
+            return redirect("vacancies_all")
+        except Exception as e:
+            messages.error(request, "Не удалось удалить запись, повторите попытку!")
+            return redirect("vacancies_all")
+ 
+    return render(request, "admin/pages/vacancies/vacancies_confirm_delete.html", context)      
+
+
+def get_last_vacanciese(request):
+    last_ten = Vacancies.objects.all().order_by('-id')[:10]
+    template_name = "admin/admin.html"
+    context = {
+        "last_vacanciese" : last_ten
     }
     
     return render(request, template_name, context)

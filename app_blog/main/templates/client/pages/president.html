@@ -1,0 +1,92 @@
+{% extends 'client/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block page_title %}{% translate "Абдураимов Жарасул Осмоналиевич" %}{% endblock page_title %}
+
+
+
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>{% translate "Руководство" %}</h2>
+          <ol>
+            <li><a href="{% url 'index'%}">Главная</a></li>
+            <li>{% translate "Абдураимов Жарасул Осмоналиевич" %}</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="col-lg-8" style="margin:auto; width: 40%; height: 20%;">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{% static 'client/img/portfolio/jarasul.jpg' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'client/img/portfolio/jarasul-1.jpg' %}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{% static 'client/img/portfolio/jarasul-2.jpg' %}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" style="margin:auto; margin-top: 5%; width: 90%;">
+            <div class="portfolio-info">
+              <h3>{% translate "Абдураимов Жарасул Осмоналиевич" %}</h3>
+              <ul>
+                <li><strong>{% translate "Должность" %}</strong>: {% translate "Президент ОАО “Кыргызиндустрия”" %}</li>
+                <li><strong>{% translate "Дата рождения" %}</strong>: 23 февраля 1960 года.</li>
+                <li><strong>{% translate "Гражданство" %}</strong>: Кыргызское</li>
+                <li><strong>{% translate "Образования" %}</strong>: Получил высшее образование в Уральском политехническом институте им. С.М. Кирова.</li>
+                <li><strong>{% translate "Специальность" %}</strong>: Инженер-механик</li>
+              </ul>
+            </div>
+
+            <div class="portfolio-info">
+                <h2>Биография:</h2>
+              <p>
+                Абдураимов Жарасул Осмоналиевич окончил Уральский политехнический институт им. Кирова в 
+                Свердловске по специальности «Инженер-механик электронной аппаратуры».<br><br>С 1990-х 
+                руководил крупнейшими заводами страны.<br><br>С 2013 по 2015 год работал в ЗАО «Кумтор 
+                Голд Компани» заместителем директора по развитию местного снабжения и руководил Проектом 
+                промышленного развития и создания рабочих мест на Иссык-Куле.<br><br>Был начальником 
+                отдела технического регулирования Минэкономразвития. Работал экспертом по промышленному 
+                развитию Кыргызстана в проекте Азиатского банка развития «Вступление в Евразийский 
+                экономический союз – управление возможностями и рисками».<br><br>С мая по сентябрь 2019 
+                года являлся общественным советником министра экономики.<br><br>С октября 2020 года по 
+                июль 2021 года проработал полпредом правительства в Ошской области.<br><br>С июля 2021 
+                года по январь 2022 года занимал должность заместителя министра экономики и торговли.<br><br>
+                В настоящее время является главой ОАО «Кыргызиндустрия».<br><br>
+              </p>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+
+
+  {% endblock content %}

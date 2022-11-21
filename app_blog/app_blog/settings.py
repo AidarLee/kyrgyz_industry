@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'app_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': 'Industry',
-        'USER': 'ajo',
-        'PASSWORD': '1330',
+        'NAME': 'kg_industr',
+        'USER': 'Userr',
+        'PASSWORD': '123456',
         'HOST': '127.0.0.1',
         'PORT': '1433',
         'OPTIONS': {
